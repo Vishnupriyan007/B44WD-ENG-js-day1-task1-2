@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2><b> Difference between HTTP1.1 vs HTTP2</h2></b>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>HTTP1.1 vs HTTP2</h2>
+      <h5>HTTP1.1</h5>
+      <ul></ul>
+<li>Ithe usest works on the textual format.</li>
+<li>There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.	</li>
+<li>It uses requests resource Inlining for use getting multiple pages	</li>
+<li>It compresses data by itself.</li>
+
+    </div>
+    <div class="card">
+      <h2>HTTP2</h2>
+<ul>
+<li>It works on the binary protocol.
+</li>
+<li>It allows multiplexing so one TCP connection is required for multiple requests.</li>
+<li>It uses PUSH frame by server that collects all multiple pages </li>
+<li>It uses HPACK for data compression.</li>
+</ul>
+**********************************************************************************************</div>
+  </div>
+  <div class= "center">
+    <div class="card">
+      <h2>SOME TECHNICAL INFORMATIONS</h2>
+      <ul>
+      <li><b>Textual Format<b></li>
+      <p>Formatted text is text that is displayed in a special, specified style. In computer applications, formatting data may be associated with text data to create formatted text. How formatted text is created and displayed is dependent on the operating system and application software used on the computer.02-Jul-2022
+</p>
+      
+      <li><b>Requests Resource Inlining</b></li>
+      <p>In JavaScript, inline function is a special type of anonymous function which is assigned to a variable, or in other words, an anonymous function with a name.
+</p>
+      <li><b>Binary Protocol</b></li>
+      <p>A binary protocol utilizes all values of a byte, as opposed to a text-based protocol which only uses values corresponding to human-readable characters in ASCII encoding. Binary protocols are intended to be read by a machine rather than a human being.
+</p>
+      <li><b>TCP(Transmission Control Protocol</b></li>
+  <p>TCP is used for organizing data in a way that ensures the secure transmission between the server and client. It guarantees the integrity of data sent over the network, regardless of the amount. For this reason, it is used to transmit data from other higher-level protocols that require all transmitted data to arrive.
+</p>
+      <li><b>PUSH</li>b></li>
+<p>The push() method adds new items to the end of an array. The push() method changes the length of the array. The push() method returns the new length.
+</p>
+      <li><b>HPACK</b></li>
+      <p>This specification defines HPACK, a compression format for efficiently representing HTTP header fields, to be used in HTTP/2.
+</p>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>HTTP1.1 Working</h3>
+      <p>HTTP 1.1 provides faster delivery of Web pages than the original HTTP and reduces Web traffic. Developed by a committee of the Internet Engineering Task Force (IETF) that includes the Web's chief creator Tim Berners-Lee, HTTP 1.1 is supported by the latest Web servers and browsers.
+        .</p>
+      
+    </div>
+    <div class="card">
+      <h3>HTTP2 Working</h3>
+      <p>HTTP/2 enables full request and response multiplexing. In practice, this means a connection made to a web server from your browser can be used to send multiple requests and receive multiple responses. This gets rid of a lot of the additional time that it takes to establish a new connection for each request.
+        .</p>
+        <img src= "https://assets.website-files.com/5ff66329429d880392f6cba2/6149cbd7fd4bdd7c82f55cc6_http1%20vs%20http2.png"alt=width="100" height="400">
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Thank you for seeing my blog I hope this Informations are useful</h2>
+</div>
+
+</body>
+</html>
